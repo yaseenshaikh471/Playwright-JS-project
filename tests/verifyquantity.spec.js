@@ -1,5 +1,5 @@
 import {test,expect} from "@playwright/test"
-import { Homelinks } from "../pages/HomeLinks"
+import { Homelinks } from "../pages/Homelinks"
 test('verfying the quantity of products', async({page})=>{
     const HomePageLinks= new Homelinks(page)
     await HomePageLinks.gotopage()

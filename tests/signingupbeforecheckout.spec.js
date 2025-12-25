@@ -1,6 +1,6 @@
 import {test,expect} from "@playwright/test"
 import { registerPage } from "../pages/registerPage"
-import { Homelinks } from "../pages/HomeLinks"
+import { Homelinks } from "../pages/Homelinks"
 
 test('Test registering before checkout from cart',async({page})=>{
     const register_page= new registerPage(page)

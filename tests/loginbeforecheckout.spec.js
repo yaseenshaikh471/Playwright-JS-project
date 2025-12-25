@@ -1,6 +1,6 @@
 import {test,expect} from '@playwright/test'
 import { loginPage } from '../pages/loginPage'
-import { Homelinks } from '../pages/HomeLinks'
+import { Homelinks } from '../pages/Homelinks'
 
 test ('Login before product adding and check out',async({page})=>{
     const login_page= new loginPage(page)

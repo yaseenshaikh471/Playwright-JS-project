@@ -60,6 +60,9 @@ exports.Homelinks= class homeLinks{
         this.payment_confirmation=page.locator('h2 b')
         this.delete_acc='a[href="/delete_account"]'
         this.delete_confirmation=page.locator('h2 b')
+
+        this.rmv_product_btn='a.cart_quantity_delete'
+        this.emptycart_text='#empty_cart p b'
         
 
     }
@@ -157,6 +160,11 @@ exports.Homelinks= class homeLinks{
     }
     async delete_account(){
       await this.page.locator(this.delete_acc).click()
+    }
+
+    async removeproduct(){
+      await this.page.locator(this.rmv_product_btn).click()
+      await this.page.waitForTimeout(1000)
     }
   }
       

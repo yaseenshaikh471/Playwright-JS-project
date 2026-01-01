@@ -7,7 +7,7 @@ exports.subscription= class subscription{
         this.ack_txt='div.alert-success.alert'
     }
     async goto_homepage(){
-        await this.page.goto('https://automationexercise.com/')
+        await this.page.goto('https://automationexercise.com/',{waitUntil:'domcontentloaded'})
     }
 
     async goto_cart(){
